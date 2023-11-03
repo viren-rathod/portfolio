@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="text-light is-size-4 has-text-weight-bold navbar-item">Title</a>
+        <span class="navbar-burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div id="tab-menu" class="navbar-end">
+          <a href="#works-section" class="navbar-item">Works</a>
+          <a href="#experience" class="navbar-item">Experience</a>
+          <a href="#contact-section" class="navbar-item">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-fullheight">
+    <div class="hero-body" data-aos="zoom-in-down" data-aos-duration="1500">
+      <div id="display" class="container">
+        <p class="section-heading">Title</p>
+        <p class="text-light is-6">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="text-light">
+          Lorem ipsum <strong>olor sit amet</strong>d consectetur adipisicing
+          elit. Quasi, repudiandae placeat voluptates iure veritatis sapiente
+          voluptas, architecto accusamus, voluptatum repellendus pariatur
+          optio? Iusto in delectus perspiciatis nobis repellendus, sit atque,
+          as<strong>non qui incidunt</strong>sumenda voluptatum dicta
+          consequuntur magnam nam quaerat nemo vero, eos laborum. Aperiam at
+          accusamus nemo<strong>dolore soluta.</strong>
+        </p>
+        <div class="tags">
+          <span class="tag" style="background-color: #7289da; color: white"><i
+              class="fas fa-display p-1"></i>&nbsp;Computer Engineer</span>
+          <span class="tag" style="background-color: #2c2f33; color: white"><i
+              class="fas fa-code p-1"></i>&nbsp;Developer</span>
+          <span class="tag" style="background-color: #dc143c; color: white"><i
+              class="fas fa-server p-1"></i>&nbsp;Programmer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="hero" id="works-section ">
+    <div class="hero-body">
+      <div class="container">
+        <p class="section-heading">Works</p>
+        <p class="text-light is-6 pb-3 " data-aos="fade-right">
+          Some Things I’ve Created
+        </p>
+        <div id="image-slider" class="splide">
+          <div class="splide__track">
+            <div class="splide__list columns">
+              <div class="m-3 splide__slide column is-one-third" data-aos="flip-up">
+                <div class="card h-100">
+                  <div class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between">
+                    <header>
+                      <div class="media is-flex is-justify-content-space-between">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png" alt="image" />
+                          </figure>
+                        </div>
+                        <div class="media-right">
+                          <a target="_blank" href="#!" class="image is-48x48">
+                            <i class="fas fas-add"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="project-title mb-4">
+                        <a href="#!" target="_blank">Lorem, ipsum. ga LA </a>
+                      </div>
+                      <div class="project-description mb-4">
+                        <p class="text-light">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Corporis, fuga nisi maiores quas modi
+                          consequatur?
+                        </p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul class="project-tech-list is-flex">
+                        <li class="pr-2 text-light">Java</li>
+                        <li class="px-1 text-light">Spring Boot</li>
+                        <li class="pl-2 text-light">React</li>
+                      </ul>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+              <div class="m-3 splide__slide column is-one-third" data-aos="flip-up">
+                <div class="card h-100">
+                  <div class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between">
+                    <header>
+                      <div class="media is-flex is-justify-content-space-between">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png" alt="image" />
+                          </figure>
+                        </div>
+                        <div class="media-right">
+                          <a target="_blank" href="#!" class="image is-48x48">
+                            <i class="fas fas-add"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="project-title mb-4">
+                        <a href="#!" target="_blank">Lorem ipsum dolor sit amet.
+                        </a>
+                      </div>
+                      <div class="project-description mb-4">
+                        <p class="text-light">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Nobis, quia!
+                        </p>
+                      </div>
+                    </header>
+                    <footer>
+                      <ul class="project-tech-list is-flex">
+                        <li class="pr-2 text-light ">React</li>
+                        <li class="px-1 text-light ">Material UI</li>
+                        <li class="pl-2 text-light ">Typescript</li>
+                      </ul>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example -->
+  <section id="jobs" class="hero p-5">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="section-heading">Where I’ve Worked</h2>
+        <div class="inner">
+          <div class="mr-3" role="tablist" aria-label="Job tabs" id="tab-list"></div>
+          <div class="tab-panels is-relative is-h ml-3" id="tab-panels"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
