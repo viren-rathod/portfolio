@@ -4,13 +4,39 @@
 .h-100 {
   height: 100% !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #0a192f !important;
   color: #ccd6f6;
 }
-.text-light,
 strong {
-  color: #ccd6f6;
+  color: #64ffda;
+  font-weight: 500;
+}
+.text-light {
+  color: #ccd6f6 !important;
+}
+.text-slate {
+  color: #a8b2d1 !important;
+}
+.text-green {
+  color: #64ffda !important;
+}
+.logo {
+  font-family: "Arial", sans-serif;
+  color: #64ffda !important;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.links a {
+  color: #a8b2d1 !important;
+  transition: all 0.3s ease;
+}
+.links a:hover {
+  transform: scale(105%);
 }
 section {
   padding-left: 40px !important;
@@ -19,8 +45,11 @@ section {
 
 .navbar {
   background: #0a192f !important;
-  /* background: #112240 !important; */
 }
+.navbar-menu {
+  background-color: transparent !important;
+}
+
 .navbar-item:focus-within {
   background: transparent !important;
 }
@@ -28,8 +57,8 @@ section {
 .link-container .link {
   display: inline-block;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: #ccd6f6 !important;
-  padding-top: 1.3rem;
+  color: #ccd6f6;
+  padding-top: 1rem;
 }
 
 .navbar-end .navbar-item:hover,
@@ -54,20 +83,31 @@ section {
   width: 0px;
   height: 2px;
   position: relative;
-  /* bottom: 0.25rem; */
   background-color: #64ffda;
   opacity: 0.5;
 }
-
+.project-title a {
+  color: #ccd6f6;
+}
 .splide__slide,
 .card {
   background-color: #112240;
   box-shadow: none !important;
+  transition: all 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.splide__slide:hover {
+  transform: translateY(-7px);
+  cursor: pointer;
+  .project-title a {
+    color: #64ffda;
+  }
+  box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 }
 .section-heading {
-  margin: 10px 0px 30px;
+  /* margin: 10px 0px 30px; */
   font-size: clamp(26px, 5vw, 32px);
-  color: #8892b0;
+  color: #ccd6f6;
+  font-weight: 700;
 }
 .inner {
   display: flex;
@@ -81,7 +121,6 @@ section {
   margin: 0px;
   list-style: none;
 }
-
 .tab-button.active {
   color: #64ffda;
   background-color: #112240;
@@ -91,6 +130,7 @@ section {
   text-decoration-skip-ink: auto;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   height: 42px;
+  width: 100%;
   padding: 0px 20px 2px;
   border-left: 2px solid #233554 !important;
   background-color: transparent;
@@ -145,14 +185,90 @@ section {
   color: #64ffda;
   font-size: 18px;
 }
+.contact-tags .tag {
+  background: transparent !important;
+  border: 1px solid #64ffda;
+  color: #64ffda !important;
+  text-decoration: none !important;
+  padding: 18px !important;
+  margin: 5px 0;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#github-info button {
+  background: transparent;
+  border: none;
+}
+.box {
+  background: transparent !important;
+  padding: 2rem !important;
+}
+.contact-tags .tag:hover {
+  transform: scale(105%);
+}
+#scroll-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  color: #2c2f33;
+  cursor: pointer;
+  text-align: center;
+}
+/* Scrollbar */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #64ffda #0a192f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 6px;
+  border: 3px none #ffffff;
+}
 
 /* Media Query */
+@media (max-width: 500px) {
+  #github-info .media {
+    display: block;
+  }
+  #github-info .media-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+  }
+  #github-info .username {
+    justify-content: center !important;
+  }
+  #github-info p {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .splide__slide {
+    width: 50% !important;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar-end .navbar-item {
+    display: block;
+    width: fit-content !important;
+  }
   .inner {
     display: block;
   }
   .tab-button {
-    /* border: 1px solid red !important; */
     border: none !important;
   }
   .tab-button.active {
@@ -172,5 +288,8 @@ section {
     bottom: 0px !important;
     height: 2px !important;
     margin-left: 50px !important;
+  }
+  .column {
+    flex-basis: fit-content !important;
   }
 }

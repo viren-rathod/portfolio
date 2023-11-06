@@ -1,147 +1,321 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>V I R E N | Java Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav class="navbar is-fixed-top">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="text-light is-size-4 has-text-weight-bold navbar-item">Title</a>
-        <span class="navbar-burger" data-target="navbarMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenu" class="navbar-menu">
-        <div id="tab-menu" class="navbar-end">
-          <a href="#works-section" class="navbar-item">Works</a>
-          <a href="#experience" class="navbar-item">Experience</a>
-          <a href="#contact-section" class="navbar-item">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero is-fullheight">
-    <div class="hero-body" data-aos="zoom-in-down" data-aos-duration="1500">
-      <div id="display" class="container">
-        <p class="section-heading">Title</p>
-        <p class="text-light is-6">Lorem ipsum dolor sit amet consectetur</p>
-        <p class="text-light">
-          Lorem ipsum <strong>olor sit amet</strong>d consectetur adipisicing
-          elit. Quasi, repudiandae placeat voluptates iure veritatis sapiente
-          voluptas, architecto accusamus, voluptatum repellendus pariatur
-          optio? Iusto in delectus perspiciatis nobis repellendus, sit atque,
-          as<strong>non qui incidunt</strong>sumenda voluptatum dicta
-          consequuntur magnam nam quaerat nemo vero, eos laborum. Aperiam at
-          accusamus nemo<strong>dolore soluta.</strong>
-        </p>
-        <div class="tags">
-          <span class="tag" style="background-color: #7289da; color: white"><i
-              class="fas fa-display p-1"></i>&nbsp;Computer Engineer</span>
-          <span class="tag" style="background-color: #2c2f33; color: white"><i
-              class="fas fa-code p-1"></i>&nbsp;Developer</span>
-          <span class="tag" style="background-color: #dc143c; color: white"><i
-              class="fas fa-server p-1"></i>&nbsp;Programmer</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Section -->
-  <section class="hero" id="works-section ">
-    <div class="hero-body">
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top">
       <div class="container">
-        <p class="section-heading">Works</p>
-        <p class="text-light is-6 pb-3 " data-aos="fade-right">
-          Some Things I’ve Created
-        </p>
-        <div id="image-slider" class="splide">
-          <div class="splide__track">
-            <div class="splide__list columns">
-              <div class="m-3 splide__slide column is-one-third" data-aos="flip-up">
-                <div class="card h-100">
-                  <div class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between">
-                    <header>
-                      <div class="media is-flex is-justify-content-space-between">
-                        <div class="media-left">
-                          <figure class="image is-48x48">
-                            <img src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png" alt="image" />
-                          </figure>
+        <div class="navbar-brand">
+          <a
+            href="#home"
+            class="logo text-light is-size-4 has-text-weight-bold navbar-item pt-3"
+            >viren</a
+          >
+          <span class="navbar-burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div id="tab-menu" class="navbar-end">
+            <a href="#works-section" class="navbar-item">Works</a>
+            <a href="#experience" class="navbar-item">Experience</a>
+            <a href="#open-source" class="navbar-item">Open Source</a>
+            <a href="#contact-section" class="navbar-item">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero is-fullheight">
+      <div class="hero-body" data-aos="zoom-in-down" data-aos-duration="1500">
+        <div id="display" class="container">
+          <p
+            class="section-heading has-text-light has-text-weight-semibold mt-3"
+          >
+            Viren Rathod
+          </p>
+          <p class="text-slate has-text-weight-bold mb-4 is-size-5">
+            Crafting Ideas, One Pixel at a Time
+          </p>
+          <p class="text-light pb-4">
+            I'm a recent <strong>Computer science</strong> graduate with a
+            passion for <strong>Java development</strong>. I'm excited about
+            building software that solves real-world problems and enhances user
+            experiences. I have hands-on experience of with
+            <strong>Spring Framework</strong> ,<strong>Spring MVC</strong>,
+            <strong>Spring Boot</strong>, <strong>Spring Security</strong> and
+            <strong>Spring data JPA</strong>. I have experience building and
+            deploying Spring-based applications. I also have experience with
+            JavaScript frameworks, which I use to create interactive and
+            user-friendly web applications alongside Spring Boot.
+          </p>
+          <div class="tags">
+            <span class="tag" style="background-color: #7289da; color: white"
+              ><i class="fas fa-display p-1"></i>&nbsp;Computer Engineer</span
+            >
+            <span class="tag" style="background-color: #2c2f33; color: white"
+              ><i class="fas fa-code p-1"></i>&nbsp;Developer</span
+            >
+            <span class="tag" style="background-color: #dc143c; color: white"
+              ><i class="fas fa-server p-1"></i>&nbsp;Programmer</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="hero" id="works-section">
+      <div class="hero-body">
+        <div class="container">
+          <p class="section-heading">Works</p>
+          <p class="text-green pb-6" data-aos="fade-right">
+            Some Things I’ve Created
+          </p>
+          <div id="image-slider" class="splide">
+            <div class="splide__track">
+              <div class="splide__list columns">
+                <div
+                  class="m-3 splide__slide column is-one-third"
+                  data-aos="flip-up"
+                >
+                  <div class="card h-100">
+                    <div
+                      class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between"
+                    >
+                      <header>
+                        <div
+                          class="media is-flex is-justify-content-space-between is-align-items-center"
+                        >
+                          <div class="media-left">
+                            <figure class="image is-48x48">
+                              <img
+                                src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png"
+                                alt="image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="links is-flex is-align-items-center ml-2">
+                            <a
+                              target="_blank"
+                              href="#!"
+                              class="mx-1 image is-24x24"
+                            >
+                              <img src="./assets/github.png" alt="" />
+                            </a>
+                            <!-- <a target="_blank" href="#!" class="mx-1 image is-24x24">
+                            <img src="./assets/link-48.png" alt="">
+                          </a> -->
+                          </div>
                         </div>
-                        <div class="media-right">
-                          <a target="_blank" href="#!" class="image is-48x48">
-                            <i class="fas fas-add"></i>
+                        <div class="project-title mb-4">
+                          <a
+                            class="has-text-weight-bold"
+                            href="#!"
+                            target="_blank"
+                            >Lorem, ipsum. ga LA
                           </a>
                         </div>
-                      </div>
-                      <div class="project-title mb-4">
-                        <a href="#!" target="_blank">Lorem, ipsum. ga LA </a>
-                      </div>
-                      <div class="project-description mb-4">
-                        <p class="text-light">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Corporis, fuga nisi maiores quas modi
-                          consequatur?
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech-list is-flex">
-                        <li class="pr-2 text-light">Java</li>
-                        <li class="px-1 text-light">Spring Boot</li>
-                        <li class="pl-2 text-light">React</li>
-                      </ul>
-                    </footer>
+                        <div class="project-description mb-4">
+                          <p class="text-slate has-text-weight-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Corporis, fuga nisi maiores quas modi
+                            consequatur?
+                          </p>
+                        </div>
+                      </header>
+                      <footer>
+                        <ul class="project-tech-list is-flex">
+                          <li class="is-size-6 pr-2 text-light">Java</li>
+                          <li class="is-size-6 px-1 text-light">Spring Boot</li>
+                          <li class="is-size-6 pl-2 text-light">React</li>
+                        </ul>
+                      </footer>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="m-3 splide__slide column is-one-third" data-aos="flip-up">
-                <div class="card h-100">
-                  <div class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between">
-                    <header>
-                      <div class="media is-flex is-justify-content-space-between">
-                        <div class="media-left">
-                          <figure class="image is-48x48">
-                            <img src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png" alt="image" />
-                          </figure>
+                <div
+                  class="m-3 splide__slide column is-one-third"
+                  data-aos="flip-up"
+                >
+                  <div class="card h-100">
+                    <div
+                      class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between"
+                    >
+                      <header>
+                        <div
+                          class="media is-flex is-justify-content-space-between"
+                        >
+                          <div class="media-left">
+                            <figure class="image is-48x48">
+                              <img
+                                src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png"
+                                alt="image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="links is-flex is-align-items-center ml-2">
+                            <a href="#!" class="image is-24x24">
+                              <img src="./assets/link-48.png" alt="" />
+                            </a>
+                          </div>
                         </div>
-                        <div class="media-right">
-                          <a target="_blank" href="#!" class="image is-48x48">
-                            <i class="fas fas-add"></i>
+                        <div class="project-title mb-4">
+                          <a
+                            class="has-text-weight-bold"
+                            href="#!"
+                            target="_blank"
+                            >Lorem ipsum dolor sit amet.
                           </a>
                         </div>
-                      </div>
-                      <div class="project-title mb-4">
-                        <a href="#!" target="_blank">Lorem ipsum dolor sit amet.
-                        </a>
-                      </div>
-                      <div class="project-description mb-4">
-                        <p class="text-light">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Nobis, quia!
-                        </p>
-                      </div>
-                    </header>
-                    <footer>
-                      <ul class="project-tech-list is-flex">
-                        <li class="pr-2 text-light ">React</li>
-                        <li class="px-1 text-light ">Material UI</li>
-                        <li class="pl-2 text-light ">Typescript</li>
-                      </ul>
-                    </footer>
+                        <div class="project-description mb-4">
+                          <p class="text-slate has-text-weight-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Nobis, quia!
+                          </p>
+                        </div>
+                      </header>
+                      <footer>
+                        <ul class="project-tech-list is-flex">
+                          <li class="is-size-6 pr-2 text-light">React</li>
+                          <li class="is-size-6 px-1 text-light">Material UI</li>
+                          <li class="is-size-6 pl-2 text-light">Typescript</li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="m-3 splide__slide column is-one-third"
+                  data-aos="flip-up"
+                >
+                  <div class="card h-100">
+                    <div
+                      class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between"
+                    >
+                      <header>
+                        <div
+                          class="media is-flex is-justify-content-space-between is-align-items-center"
+                        >
+                          <div class="media-left">
+                            <figure class="image is-48x48">
+                              <img
+                                src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png"
+                                alt="image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="links is-flex is-align-items-center ml-2">
+                            <a
+                              target="_blank"
+                              href="#!"
+                              class="mx-1 image is-24x24"
+                            >
+                              <img src="./assets/github.png" alt="" />
+                            </a>
+                            <!-- <a target="_blank" href="#!" class="mx-1 image is-24x24">
+                            <img src="./assets/link-48.png" alt="">
+                          </a> -->
+                          </div>
+                        </div>
+                        <div class="project-title mb-4">
+                          <a
+                            class="has-text-weight-bold"
+                            href="#!"
+                            target="_blank"
+                            >Lorem, ipsum. ga LA
+                          </a>
+                        </div>
+                        <div class="project-description mb-4">
+                          <p class="text-slate has-text-weight-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Corporis, fuga nisi maiores quas modi
+                            consequatur?
+                          </p>
+                        </div>
+                      </header>
+                      <footer>
+                        <ul class="project-tech-list is-flex">
+                          <li class="is-size-6 pr-2 text-light">Java</li>
+                          <li class="is-size-6 px-1 text-light">Spring Boot</li>
+                          <li class="is-size-6 pl-2 text-light">React</li>
+                        </ul>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="m-3 splide__slide column is-one-third"
+                  data-aos="flip-up"
+                >
+                  <div class="card h-100">
+                    <div
+                      class="card-content h-100 is-flex is-flex-direction-column is-justify-content-space-between"
+                    >
+                      <header>
+                        <div
+                          class="media is-flex is-justify-content-space-between"
+                        >
+                          <div class="media-left">
+                            <figure class="image is-48x48">
+                              <img
+                                src="https://img.icons8.com/ios/50/64ffda/folder-invoices--v1.png"
+                                alt="image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="links is-flex is-align-items-center ml-2">
+                            <a href="#!" class="image is-24x24">
+                              <img src="./assets/link-48.png" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="project-title mb-4">
+                          <a
+                            class="has-text-weight-bold"
+                            href="#!"
+                            target="_blank"
+                            >Lorem ipsum dolor sit amet.
+                          </a>
+                        </div>
+                        <div class="project-description mb-4">
+                          <p class="text-slate has-text-weight-medium">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Nobis, quia!
+                          </p>
+                        </div>
+                      </header>
+                      <footer>
+                        <ul class="project-tech-list is-flex">
+                          <li class="is-size-6 pr-2 text-light">React</li>
+                          <li class="is-size-6 px-1 text-light">Material UI</li>
+                          <li class="is-size-6 pl-2 text-light">Typescript</li>
+                        </ul>
+                      </footer>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,22 +323,88 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Example -->
-  <section id="jobs" class="hero p-5">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="section-heading">Where I’ve Worked</h2>
-        <div class="inner">
-          <div class="mr-3" role="tablist" aria-label="Job tabs" id="tab-list"></div>
-          <div class="tab-panels is-relative is-h ml-3" id="tab-panels"></div>
+    <!-- Experience -->
+    <section id="experience" class="hero is-halfheight p-5">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="section-heading">Experience</h2>
+          <h2 class="text-green pb-6">Where I’ve Worked</h2>
+          <div class="inner">
+            <div
+              class="mr-3"
+              role="tablist"
+              aria-label="Job tabs"
+              id="tab-list"
+            ></div>
+            <div class="tab-panels is-relative is-h ml-3" id="tab-panels"></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <script src="./scripts/script.js"></script>
-</body>
+    </section>
 
+    <!-- Open Source -->
+    <section id="open-source" class="hero p-5">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="section-heading">Github Profile</h2>
+          <h2 class="text-green pb-4">Some of my Projects in Github</h2>
+          <div id="github-info">
+            <button class="button is-fullwidth is-loading">Loading...</button>
+          </div>
+          <div id="repo-slider" class="splide">
+            <div class="splide__track">
+              <div id="repo_list" class="splide__list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-section" class="hero is-halfheight p-5">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="section-heading">Contact</h2>
+          <h2 class="text-green pb-4">Get In Touch</h2>
+          <p class="text-slate has-text-weight-medium">
+            I’m always looking for any new opportunities,new projects or work on
+            creative ideas and my inbox is always open. Whether you have a
+            question or just want to say hi, I’ll try my best to get back to
+            you!
+          </p>
+          <div class="contact-tags py-4">
+            <a
+              target="_blank"
+              href="mailto:viren.rathod.2023@gmail.com?subject=From%20Portfolio%3A"
+              class="tag is-medium"
+              ><i class="fas fa-envelope"></i>&nbsp;Email</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/viren-rathod"
+              class="tag is-medium"
+              ><i class="fab fa-github"></i>&nbsp;Github</a
+            >
+            <a target="_blank" href="https://t.me/itsvrn" class="tag is-medium"
+              ><i class="fab fa-telegram"></i>&nbsp;Telegram</a
+            >
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/viren-rathod-990981220"
+              class="tag is-medium"
+              ><i class="fab fa-linkedin"></i>&nbsp;Linkedin</a
+            >
+            <!-- <a target="_blank" class="tag is-medium" style="background-color: #25d366"><i class="fab fa-whatsapp"></i>&nbsp;WhatsApp</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span id="scroll-up" class="icon icon is-large" onclick="scrollToTop()"
+      ><i class="fas fa-angle-up fa-2x text-slate"></i
+    ></span>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
