@@ -16,40 +16,31 @@ navbarItems.forEach((item) => {
 
 const jobsData = [
   {
-    title: "lorem 1",
-    company: "loremldo1",
-    range: "Jan 2020 - Dec 2021",
-    html: `<ul class="pr-6">
-    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa expedita quibusdam cum placeat quod delectus.
+    title: "Software Developer",
+    company: "eSparkBiz",
+    companyUrl:'https://www.esparkinfo.com/',
+    range: "July 2023 - Present",
+    html: ` <ul class="pr-6">
+    <li>Developed robust APIs for complex data operations, improving system response times.</li>
+    <li>Designed and optimized RESTful APIs with Spring Boot, significantly enhancing application efficiency and performance.
     </li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates soluta officia quidem nisi
-      itaque quisquam consectetur, laborum nesciunt accusamus!</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, odit. Aspernatur veniam deserunt commodi
-      nostrum.</li>
-    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </li>
+    <li>Contributed as a full-stack developer to a Learning Management System (LMS), focusing on complex data handling for both backend and frontend.</li>
+    <li>Created dynamic and responsive UI components using React, ensuring seamless data visualization and an excellent user experience.</li>
   </ul>`,
   },
   {
-    title: "LOREM 2",
-    company: "loremngknkse2",
-    range: "Feb 2019 - Nov 2019",
-    html: ` <ul class="pr-6">
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit earum ut cum amet incidunt eveniet culpa veniam quaerat voluptate? Molestiae illum sunt recusandae doloribus.
+    title: "Software Developer Intern",
+    company: "eSparkBiz",
+    companyUrl:'https://www.esparkinfo.com/',
+    range: "January 2023 - June 2023",
+    html: `<ul class="pr-6">
+    <li>Contributed to API development and bug fixing as a Spring Boot Developer, utilizing MySQL and MongoDB for database management.
     </li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Developed responsive user interfaces in ReactJS, effectively managing state to handle dynamic data.</li>   
+    <li>Gained hands-on experience with version control systems, including Git and GitLab.
+    </li>
   </ul>`,
-  },
-  //   {
-  //     title: "LOREM 2",
-  //     company: "loremn gknkse 2",
-  //     range: "Feb 2019 - Nov 2019",
-  //     html: ` <ul class="pr-6">
-  //     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit earum ut cum amet incidunt eveniet culpa veniam quaerat voluptate? Molestiae illum sunt recusandae doloribus.
-  //     </li>
-  //     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-  //   </ul>`,
-  //   },
+  }  
 ];
 
 let totalButton = 0;
@@ -74,7 +65,7 @@ function createTabPanel(job, index) {
       <span class="company link-container">
         &nbsp;@&nbsp;<a
           class="link"
-          href="#!/"
+          href="${job.companyUrl}"
           rel="noopener noreferrer"
           target="_blank"
         >
