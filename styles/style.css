@@ -276,6 +276,7 @@ section {
   }
   #tab-list {
     display: flex;
+    flex-wrap: wrap;
     overflow-x: auto;
     overflow-y: hidden;
     width: auto;
